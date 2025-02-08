@@ -1,0 +1,125 @@
+.game-container {
+    max-width: 100%; /* Đảm bảo không bị cắt */
+    overflow: visible; /* Hiển thị đầy đủ nội dung */
+    word-wrap: break-word; /* Xuống dòng nếu quá dài */
+}
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Phần header chứa liên kết ghim */
+.pinned-links {
+    background-color: #f1f7f4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.links-box {
+    background: #6ae3a0;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.links-box a {
+    color: #241fc2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links-box hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+    margin: 10px 0;
+}
+
+/* Phần game */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.rainbow-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    animation: rainbow 3s linear infinite;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #060606;
+    margin-left: 10px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+
+/* Ảnh game */
+.game-image {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Giá */
+.game-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount-price {
+    color: #e60000;
+}
+
+/* Nút mua game */
+.buy-button {
+    display: block;
+    width: 150px;
+    margin: 15px 10px;
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background: #ff3300;
+    transform: scale(1.05);
+}

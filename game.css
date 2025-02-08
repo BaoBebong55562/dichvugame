@@ -1,0 +1,204 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+.intro p {
+    line-height: 1.6;
+}
+
+.telegram-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.telegram-link:hover {
+    background-color: #45a049;
+}
+
+.game-categories form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-categories input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.game-categories button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-categories button:hover {
+    background-color: #45a049;
+}
+
+.game-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.game-info li {
+    margin-bottom: 10px;
+}
+
+.get-game-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-game-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.game-summary {
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.game-link:hover {
+    background-color: #45a049;
+}
+
+.game-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.game-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.game-item:hover {
+    color: #4CAF50;
+    transform: scale(1.1);
+}
+
+/* Style cho phần SimCity Buildlt */
+.game-simcity {
+    background-color: #e8f5e9;
+}
+
+.buy-game-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.buy-game-btn:hover {
+    background-color: #45a049;
+}
+.game-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-image img:hover {
+    transform: scale(1.05);
+}
+.game-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-image img:hover {
+    transform: scale(1.05);
+}
+.game-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-image img:hover {
+    transform: scale(1.05);
+}
+.original-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: 1.2em;
+}
+
+.discounted-price {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-image img:hover {
+    transform: scale(1.05);
+}

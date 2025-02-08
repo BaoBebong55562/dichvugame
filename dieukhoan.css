@@ -1,0 +1,110 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu điều hướng */
+.menu {
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    background: #0c0c0c;
+}
+
+/* Khung chứa nội dung */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 70px; /* Để không bị che bởi menu */
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 28px;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+/* Hộp chính sách */
+.policy-box {
+    background: #fdf8e1;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #ff9800;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.policy-box h2 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+/* Cảnh báo */
+.warning {
+    background: #ffe6e6;
+    border-left: 5px solid #ff0000;
+}
+
+.warning h2 {
+    color: #cc0000;
+}
+
+/* Hộp liên hệ */
+.contact {
+    background: #e6f7ff;
+    border-left: 5px solid #007bff;
+}
+
+.contact h2 {
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}

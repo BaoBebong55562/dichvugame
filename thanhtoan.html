@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+    <script src="thanhtoan.js" defer></script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="thanhtoan.html">Thanh toán</a></li>
+                <li><a href="dieukhoan.html">Chính sách và điều khoản</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="payment-container">
+        <h1>Thanh Toán</h1>
+        
+        <div class="payment-section">
+            <h2>1️⃣ Hướng Dẫn Thanh Toán</h2>
+            <p>🔹 Bạn vui lòng chọn game muốn mua, sau đó hệ thống sẽ hiển thị thông tin chuyển khoản.</p>
+        </div>
+        
+        <div class="payment-section">
+            <h2>2️⃣ Xác Nhận Game Mua</h2>
+            <button class="toggle-button" onclick="toggleGameList()">Chọn Game</button>
+            <div class="game-options">
+                <ul>
+                    <li onclick="selectGame(this)" data-code="LQ1573" data-price="300.000VNĐ">Liên Quân Mobile V1.57.3 [Update 8-2]</li>
+                    <li onclick="selectGame(this)" data-code="CM2024" data-price="170.000VNĐ">Coin Master</li>
+                    <li onclick="selectGame(this)" data-code="SCB2024" data-price="70.000VNĐ">SimCity BuildIt</li>
+                    <li onclick="selectGame(this)" data-code="CXS2024" data-price="50.000VNĐ">CarX Street</li>
+                    <li onclick="selectGame(this)" data-code="GOI2024" data-price="49.000VNĐ">Getting Over It</li>
+                    <li onclick="selectGame(this)" data-code="CPS2024" data-price="70.000VNĐ">Car Parking Simulator</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="payment-section" id="payment-details" style="display: none;">
+            <h2>3️⃣ Thông Tin Chuyển Khoản</h2>
+            <p><strong>Ngân hàng:</strong> MBBank</p>
+            <p><strong>Chủ tài khoản:</strong> NGUYEN HO GIA BAO</p>
+            <p><strong>Số tài khoản:</strong> 868686806456</p>
+            <p><strong>Số tiền cần chuyển:</strong> <span id="game-price"></span></p>
+            <p><strong>Nội dung chuyển khoản:</strong> <span id="game-code"></span></p>
+        </div>
+        
+        <div class="payment-section">
+            <h2>4️⃣ Xác Nhận Thanh Toán</h2>
+            <a href="https://t.me/tomxinh917" target="_blank">
+                <button class="confirm-button">Xác Nhận & Liên Hệ Admin</button>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
+<footer class="footer">
+    <p>&copy; 2025 High Light Media. Mọi quyền được bảo lưu.</p>
+</footer>
+<script src="protect.js"></script> <!-- Gọi file JS để chặn sao chép -->
