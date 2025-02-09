@@ -1,12 +1,13 @@
 function toggleGameList() {
-    document.querySelector(".game-options").classList.toggle("show");
+    const gameList = document.querySelector(".game-options");
+    gameList.style.display = gameList.style.display === "block" ? "none" : "block";
 }
 
-function selectGame(gameElement) {
-    let gamePrice = gameElement.getAttribute("data-price");
-    let gameCode = gameElement.getAttribute("data-code");
-    
-    document.getElementById("game-price").innerText = gamePrice;
-    document.getElementById("game-code").innerText = gameCode;
+function selectGame(element) {
+    const gameCode = element.getAttribute("data-code");
+    const gamePrice = element.getAttribute("data-price");
+
+    document.getElementById("game-code").textContent = gameCode;
+    document.getElementById("game-price").textContent = gamePrice;
     document.getElementById("payment-details").style.display = "block";
 }
