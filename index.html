@@ -17,6 +17,38 @@
     </nav>
 </body>
 </html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông báo cập nhật</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="notification">
+        <span class="close-btn" onclick="closeNotification()">✖</span>
+        <h2 class="rainbow-text">NEW UPDATE</h2>
+        <p>NEW GAME: EURO TRUCK SIMULATOR 2</p>
+        <p>Hãy tham khảo trong phần sản phẩm <a href="sanpham.html">tại đây</a>.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.getElementById("notification").classList.add("show");
+            }, 500); // Hiện sau 0.5 giây
+        });
+
+        function closeNotification() {
+            let notification = document.getElementById("notification");
+            notification.classList.remove("show");
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 500); // Ẩn sau 0.5 giây
+        }
+    </script>
+
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -48,13 +80,13 @@
     </section>
     <div class="links-box">
         <h2>Hướng Dẫn Cài Đặt</h2>
-        <p><strong>LINK TẢI DNS:</strong> <a href="https://web1s.asia/9W7MoiEszc/" target="_blank">Nhấn vào đây</a></p>
+        <p><strong>LINK TẢI DNS:</strong> <a href="https://khoindvn.io.vn/" target="_blank">Nhấn vào đây</a></p>
         <p><strong>LINK LẤY CHỨNG CHỈ:</strong> <a href="https://khoindvn.io.vn/" target="_blank">Nhấn vào đây</a></p>
         <p><strong>Video hướng dẫn ⬇️⬇️⬇️</strong></p>
         <a href="https://youtu.be/hoVoi1ilf-s" target="_blank">Xem ngay</a>
     </div>
 </main>
 <footer class="footer">
-    <p>&copy; 2025 High Light Media. Mọi quyền được bảo lưu.</p>
+    <p>&copy; 2025 High Light Team. Mọi quyền được bảo lưu.</p>
 </footer>
 <script src="protect.js"></script> <!-- Gọi file JS để chặn sao chép -->
