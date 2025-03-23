@@ -83,7 +83,7 @@ window.resetPassword = function () {
             message.textContent = "✅ Kiểm tra email để đặt lại mật khẩu!";
         })
         .catch((error) => {
-            message.textContent = "⚠️ Lỗi";
+            message.textContent = "⚠️ " + error.message;
         });
 };
 
@@ -98,20 +98,3 @@ window.logout = function () {
         });
 };
 
-// 📌 KIỂM TRA ĐĂNG NHẬP & CẬP NHẬT SỐ DƯ
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        const balanceRef = ref(database, `users/${user.uid}/balance`);
-        get(balanceRef).then((snapshot) => {
-            if (snapshot.exists()) {
-                document.getElementById("userBalance").textContent = snapshot.val() + " VNĐ";
-            } else {
-                document.getElementById("userBalance").textContent = "0 VNĐ";
-            }
-        });
-    } else {
-        // Nếu chưa đăng nhập, chuyển về trang đăng nhập
-        if (window.location.pathname !== "/dangnhap.html") {
-            window.location.href = "dangnhap.html";
-        }
-    }
