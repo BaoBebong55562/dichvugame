@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Website</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="thanhtoan.html">Thanh toán</a></li>
+            <li><a href="lienhe.html">Liên hệ với chúng tôi</a></li>
+            <li><a href="taikhoan.html">Tài khoản</a></li>
+
+        </ul>
+    </nav>
+</body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Khoản</title>
+    <link rel="stylesheet" href="taikhoan.css">
+</head>
+<body>
+    <div class="account-container">
+        <h2>Thông Tin Tài Khoản</h2>
+        <p><strong>Email:</strong> <span id="userEmail">Đang tải...</span></p>
+        <p><strong>Số dư:</strong> <span id="userBalance">0 VNĐ</span></p>
+        <!-- Khu vực nạp tiền -->
+        <h3>Nạp Tiền</h3>
+        <p><strong>Ngân hàng:</strong> MBBank</p>
+        <p><strong>STK:</strong> 868686806456</p>
+        <p><strong>Chủ tài khoản:</strong> NGUYEN HO GIA BAO</p>
+        <p><strong>Lưu ý:</strong> Nhập mã giao dịch sau khi chuyển khoản!</p>
+
+        <input type="number" id="amount" placeholder="Nhập số tiền (VNĐ)">
+        <input type="text" id="transactionId" placeholder="Nhập nội dung giao dịch">
+        <button onclick="submitTopUp()">Gửi Yêu Cầu</button>
+
+        <p id="topUpMessage"></p>
+
+        <!-- Nút đăng xuất -->
+        <button id="logoutButton">Đăng Xuất</button>
+    </div>
+
+    <script type="module" src="taikhoan.js"></script>
+</body>
+</html>
+
+<title>Lịch sử giao dịch</title>
+<link rel="stylesheet" href="lsgg.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Nạp tiền</h2>
+    <p>Số dư tài khoản: <span id="balance">0</span> VNĐ</p>
+    <input type="number" id="amount" placeholder="Nhập số tiền">
+    <button onclick="addTransaction()">Nạp tiền</button>
+
+    <h2>Lịch sử giao dịch</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Thời Gian</th>
+                <th>Số Tiền</th>
+                <th>Trạng Thái</th>
+            </tr>
+        </thead>
+        <tbody id="transactionHistory">
+            <!-- Dữ liệu giao dịch sẽ hiển thị ở đây -->
+        </tbody>
+    </table>
+</div>
+
+<script src="lsgg.js"></script>
+
+</body>
+</html>

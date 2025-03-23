@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Đăng Nhập</h2>
+        <input type="email" id="loginEmail" placeholder="Nhập email">
+        <input type="password" id="loginPassword" placeholder="Nhập mật khẩu">
+        <button onclick="login()">Đăng Nhập</button>
+        <p><a href="quenmatkhau.html">Quên mật khẩu?</a></p>
+        <p>Chưa có tài khoản? <a href="dangky.html">Đăng ký ngay</a></p>
+        <p id="loginMessage"></p>
+        <p id="loading">⏳ Vui lòng chờ...</p>
+    </div>
+    <script type="module" src="auth.js"></script>
+    
+</body>
+</html>

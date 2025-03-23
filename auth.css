@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Khung đăng ký */
+.auth-container {
+    max-width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.auth-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Hiệu ứng nhập liệu */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: border-bottom 0.3s;
+}
+
+input:focus {
+    border-bottom: 2px solid #2575fc;
+}
+
+/* Nhãn hiệu ứng */
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+input:focus + label, input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #2575fc;
+}
+
+/* Nút đăng ký */
+button {
+    width: 85%;
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1a5ecc;
+}
+
+/* Hiển thị thông báo */
+#registerMessage {
+    font-size: 14px;
+    color: green;
+    margin-top: 10px;
+}
+
+/* Liên kết */
+a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Hiệu ứng loading */
+#loading {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2575fc;
+}

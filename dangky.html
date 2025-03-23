@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Đăng Ký Tài Khoản</h2>
+        <div class="input-group">
+            <input type="email" id="registerEmail" required>
+            <label>Email</label>
+        </div>
+        <div class="input-group">
+            <input type="password" id="registerPassword" required>
+            <label>Mật khẩu</label>
+        </div>
+        <button onclick="register()">Đăng Ký</button>
+        <p>Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
+        <p id="registerMessage"></p>
+        <p id="loading">⏳ Vui lòng chờ...</p>
+    </div>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
