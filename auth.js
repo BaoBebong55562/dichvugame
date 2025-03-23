@@ -83,7 +83,7 @@ window.resetPassword = function () {
             message.textContent = "✅ Kiểm tra email để đặt lại mật khẩu!";
         })
         .catch((error) => {
-            message.textContent = "⚠️ " + error.message;
+            message.textContent = "⚠️ Lỗi";
         });
 };
 
@@ -115,15 +115,3 @@ onAuthStateChanged(auth, (user) => {
             window.location.href = "dangnhap.html";
         }
     }
-});
-const userId = "J8gKji6FlsPtjYLK0Hzl0hQ5mjk1"; // Thay bằng ID người dùng thực tế
-const amountToAdd = 50000; // Số tiền muốn cộng
-
-const userRef = firebase.database().ref("users/" + userId);
-
-// Đọc số dư hiện tại và cộng thêm
-userRef.once("value").then((snapshot) => {
-    let currentBalance = snapshot.val()?.balance || 0;
-    userRef.update({ balance: currentBalance + amountToAdd });
-    console.log("Số dư mới: ", currentBalance + amountToAdd);
-});
